@@ -1,4 +1,3 @@
-#from openpyxl import *
 from openpyxl import Workbook
 from openpyxl.compat import range
 from openpyxl import load_workbook
@@ -74,7 +73,6 @@ def get_pos (ws):
             cell_pos['last_row'] = row_number-1
             break
     get_cells (ws, cell_pos['first_row'], cell_pos)
-    print cell_pos
     return cell_pos
 
 def get_cells (ws, row_number, cell_pos):
